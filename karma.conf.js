@@ -1,5 +1,5 @@
 // Karma configuration
-// Generated on Tue Aug 25 2015 11:18:59 GMT+0100 (BST)
+// Generated on Tue Aug 25 2015 18:48:14 GMT+0100 (GMT Summer Time)
 
 module.exports = function(config) {
   config.set({
@@ -16,8 +16,8 @@ module.exports = function(config) {
     // list of files / patterns to load in the browser
     files: [
       'test-main.js',
-      {pattern: 'test/*.js', included: false},
-      {pattern: 'lib/*.js', included: false}
+      {pattern: 'src/**/*.js', included: false},
+      {pattern: 'test/**/*.js', included: false}
     ],
 
 
@@ -48,7 +48,7 @@ module.exports = function(config) {
 
     // level of logging
     // possible values: config.LOG_DISABLE || config.LOG_ERROR || config.LOG_WARN || config.LOG_INFO || config.LOG_DEBUG
-    logLevel: config.LOG_DEBUG,
+    logLevel: config.LOG_INFO,
 
 
     // enable / disable watching file and executing tests whenever any file changes
