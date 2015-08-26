@@ -1,5 +1,5 @@
 // Karma configuration
-// Generated on Tue Aug 25 2015 18:48:14 GMT+0100 (GMT Summer Time)
+// Generated on Wed Aug 26 2015 18:22:53 GMT+0100 (GMT Summer Time)
 
 module.exports = function(config) {
   config.set({
@@ -10,14 +10,12 @@ module.exports = function(config) {
 
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-    frameworks: ['jasmine', 'requirejs'],
+    frameworks: ['jasmine'],
 
 
     // list of files / patterns to load in the browser
     files: [
-      'test-main.js',
-      {pattern: 'src/**/*.js', included: false},
-      {pattern: 'test/**/*.js', included: false}
+      'test/*.js'
     ],
 
 
@@ -48,7 +46,7 @@ module.exports = function(config) {
 
     // level of logging
     // possible values: config.LOG_DISABLE || config.LOG_ERROR || config.LOG_WARN || config.LOG_INFO || config.LOG_DEBUG
-    logLevel: config.LOG_ERROR,
+    logLevel: config.LOG_INFO,
 
 
     // enable / disable watching file and executing tests whenever any file changes
